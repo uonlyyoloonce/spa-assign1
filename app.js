@@ -27,6 +27,7 @@ function LunchCheckController($scope) {
               'border-color':''
           }
        if(emptyflag) $scope.msg1=' do NOT consider and empty item, i.e., `, ,`';
+       else  $scope.msg1='';
       $scope.msg='enjoy';
     
    }else if (counter>3)
@@ -35,6 +36,7 @@ function LunchCheckController($scope) {
               'border-color':''
           }
       if(emptyflag) $scope.msg1=' do NOT consider and empty item, i.e., `, ,`';
+         else  $scope.msg1='';
           $scope.msg='Too much!';
          
    }
@@ -47,6 +49,7 @@ function LunchCheckController($scope) {
               'border-color':'red'
           }
        if(emptyflag) $scope.msg1=' do NOT consider and empty item, i.e., `, ,`';
+          else  $scope.msg1='';
           $scope.msg='Please enter data first';
 
      
